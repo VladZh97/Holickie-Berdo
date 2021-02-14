@@ -7,10 +7,19 @@
     <meta name="description" content="<?php bloginfo('description'); ?>" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta property="og:url" content="http://localhost/domki/" />
-    <meta property="og:title" content="Domki w Bieszczadach" />
-    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
-    <meta property="og:image" content="" />
+    <!-- Facebook -->
+    <meta property="og:title" content="<?php bloginfo( 'name' ); ?>">
+    <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
+    <meta property="og:url" content="<?php echo get_home_url(); ?>">
+    <meta property="og:description" content="<?php echo get_bloginfo('description'); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/home/logo.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<?php echo get_home_url(); ?>">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="<?php echo get_bloginfo('description'); ?>">
+    <meta property="twitter:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/home/logo.png">
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <?php wp_head(); ?>

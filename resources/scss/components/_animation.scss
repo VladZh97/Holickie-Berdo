@@ -1,0 +1,142 @@
+// FRONT PAGE
+
+.hero__title {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease-in-out 1.5s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-title,
+.map__left,
+.offer__title,
+.gallery__list,
+.about__left-title,
+.header__title {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.map__text,
+.about__right,
+.opinion__inner,
+.page-contact,
+.header-box {
+  opacity: 0;
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+  }
+}
+
+.about__left {
+  &-text,
+  &-link {
+    opacity: 0;
+    transform: translateY(80px);
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  &-text {
+    transition: all 0.7s ease-in-out 0.6s;
+  }
+  &-link {
+    transition: all 0.7s ease-in-out 0.7s;
+  }
+}
+// END FRONT PAGE
+
+// ABOUT
+.about__des,
+.about__row,
+.about__bottom-image {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about__bottom-text {
+  opacity: 0;
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+  }
+}
+// END ABOUT
+
+// OFFER
+.offer__row {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// END OFFER
+
+// BLOG
+.blog__more-container {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// END BLOG
+
+// GALLERY
+.gallery__container {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// END GALLERY
+
+// CONTACT
+.contact__left,
+.contact__right {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// END CONTACT
+
+// SINGLE
+.single__title,
+.single__image,
+.single__main {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.7s ease-in-out 0.5s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// END SINGLE

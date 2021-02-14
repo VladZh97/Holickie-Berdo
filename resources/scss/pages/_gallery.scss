@@ -1,0 +1,24 @@
+.gallery {
+  &__inner {
+    margin-top: 170px;
+
+    .foogallery.fg-dark .fg-item-inner {
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: $lg - 1px) {
+  .gallery {
+    &__inner {
+      margin-top: 90px;
+    }
+  }
+}
+@media screen and (max-width: $sm - 1px) {
+  .gallery {
+    &__inner {
+      margin-top: 60px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.title {
+  font-size: 96px;
+  font-family: $titleFont;
+  font-weight: 700;
+  line-height: 108px;
+  color: #fff;
+}
+.section-title {
+  font-size: 96px;
+  font-family: $titleFont;
+  font-weight: 700;
+  line-height: 96px;
+  color: #303337;
+}
+
+.text {
+  font-size: 16px;
+  color: #fff;
+  line-height: 30px;
+}
+
+.btn {
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 25px;
+  font-weight: 500;
+  border-radius: 25px;
+  background-color: $btnBg;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #b67e15;
+  }
+}
+
+@media screen and (min-width: $xxl) {
+  .container-inner {
+    max-width: $xxl;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .container-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $xl) and (max-width: 1400px) {
+  .container-inner,
+  .page-contact {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $xl - 1px) {
+  .container-inner,
+  .page-contact {
+    max-width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: $lg - 1px) {
+  .container-inner,
+  .page-contact {
+    max-width: 720px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .title {
+    font-size: 85px;
+  }
+  .section-title {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: $md - 1px) {
+  .container-inner,
+  .page-contact {
+    max-width: 540px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section-title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: $sm - 1px) {
+  .container-inner,
+  .page-contact {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section-title {
+    font-size: 50px;
+    line-height: 55px;
+  }
+}

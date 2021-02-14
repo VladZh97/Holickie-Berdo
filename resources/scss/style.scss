@@ -1,0 +1,46 @@
+@import "abstracts/variables";
+@import "abstracts/typography";
+@import "abstracts/mixins";
+@import "abstracts/base";
+
+@import "components/burger";
+@import "components/contact-footer";
+@import "components/patterns";
+@import "components/animation";
+
+@import "layout/header";
+@import "layout/subHeader";
+@import "layout/footer";
+@import "layout/404";
+
+@import "pages/front-page";
+@import "pages/articles";
+@import "pages/single";
+@import "pages/page";
+@import "pages/about";
+@import "pages/offer";
+@import "pages/gallery";
+@import "pages/blog";
+@import "pages/contact";
+@import "pages/regulations";
+
+@import "vendors/bootstrap-grid.min.css";
+// @import "vendors/aos.css";
+@import "vendors/owl.css";
+@import "vendors/lightbox.min.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

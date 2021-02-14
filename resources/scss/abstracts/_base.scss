@@ -1,0 +1,152 @@
+html {
+  overflow: hidden;
+}
+body {
+  overflow: hidden;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+textarea,
+input,
+a,
+*::placeholder {
+  font-family: $mainFont;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  min-height: 100vh;
+}
+
+a {
+  &:focus {
+    outline: none;
+  }
+}
+
+main {
+  min-height: 100vh;
+}
+
+// LOADER
+.spinner__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 99999;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border-top: 3px solid #a68363;
+  border-left: 3px solid #a68363;
+  border-right: 3px solid #a68363;
+  border-radius: 50%;
+  animation: rotate 0.5s infinite linear;
+  transform-origin: center center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//   COOKIES
+#cookies-message {
+  border-radius: 14px;
+  .cookie__message {
+    a {
+      &:hover {
+        color: #868b94 !important;
+      }
+    }
+  }
+  a[name="accept-cookies"] {
+    background-size: 300% 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      to right,
+      #303337,
+      #5e646d,
+      #303337,
+      #5e646d
+    );
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+      background-position: 100% 0;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #cookies-message {
+    right: 50% !important;
+    transform: translateX(50%) !important;
+  }
+}
+
+// ARROW UP
+.arrow__up {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-size: 300% 100%;
+  background-image: linear-gradient(
+    to right,
+    #303337,
+    #5e646d,
+    #303337,
+    #5e646d
+  );
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  &::after {
+    content: url("../img/up.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 17px;
+    height: 17px;
+  }
+  &:hover {
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+  }
+}
+@media screen and (max-width: $sm) {
+  .arrow__up {
+    bottom: 20px;
+    right: 20px;
+  }
+}

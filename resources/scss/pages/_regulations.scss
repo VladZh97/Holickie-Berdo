@@ -1,0 +1,36 @@
+.regulations {
+  &__title {
+    font-family: $titleFont;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 66px;
+    text-align: center;
+    color: #4c5057;
+    margin-top: 100px;
+    margin-bottom: 64px;
+  }
+  &__inner {
+    background-color: $darkBg;
+  }
+  &__container {
+    background-color: #fff;
+    padding: 40px 123px 93px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $titleFont;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #4c5057;
+    }
+    p,
+    ul,
+    li {
+      line-height: 30px;
+      color: #7e7e7e;
+    }
+  }
+}

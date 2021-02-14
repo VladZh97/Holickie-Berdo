@@ -13,7 +13,8 @@ get_header('subpage'); ?>
                             $image = get_sub_field('image');
                             $title = get_sub_field('title');
                             ?>
-                                <div class="offer__row anim-items row" id="<?php echo "oferta-".$i; ?>">
+                                <div class="offer__row anim-items row">
+                                <div class="out__offer" id="<?php echo "oferta-".$i; ?>"></div>
                                     <div class="col-md-6">
                                         <div class="offer__left">
                                             <h2 class="offer__item-title"><?php echo $title?></h2>

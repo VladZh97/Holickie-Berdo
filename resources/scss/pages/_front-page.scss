@@ -399,7 +399,16 @@
       &__right {
         position: relative;
         align-self: center;
+        &-image {
+          max-width: 831px;
+          max-height: 614px;
+        }
         &-image-sm {
+          &:nth-child(1),
+          &:nth-child(2) {
+            max-width: 246px;
+            max-height: 181px;
+          }
           &:nth-child(2) {
             position: absolute;
             bottom: 77px;

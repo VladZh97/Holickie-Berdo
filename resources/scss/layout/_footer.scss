@@ -1,5 +1,6 @@
 .footer {
   background-color: $darkBg;
+  overflow: hidden;
   &__menu {
     position: relative;
     display: flex;
@@ -11,7 +12,7 @@
     &::after {
       content: url("../img//header/mount.png");
       position: absolute;
-      bottom: 0;
+      bottom: -50px;
       left: 50%;
       transform: translateX(-40%);
       width: 100%;
@@ -72,8 +73,28 @@
         margin-left: 15px;
       }
       &::after {
-        bottom: auto;
+        bottom: -90px;
       }
+    }
+  }
+}
+
+
+.footer__seo {
+  color: #ddd;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 10px;
+  &-copy {
+    margin: 0;
+  }
+  &-contact {
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+  a {
+    &:hover {
+      opacity: .7;
     }
   }
 }

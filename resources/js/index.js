@@ -136,11 +136,11 @@ if(document.body.classList.contains('error404')) {
   
   map.addControl(new mapboxgl.NavigationControl());
   map.scrollZoom.disable();
-  map.boxZoom.disable();
+  // map.boxZoom.disable();
   map.dragRotate.disable();
   map.keyboard.disable();
   map.doubleClickZoom.disable();
-  map.touchZoomRotate.disable();
+  // map.touchZoomRotate.disable();
   
   const point = document.createElement("div");
   point.className = "marker";

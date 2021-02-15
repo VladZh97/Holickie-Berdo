@@ -17,7 +17,7 @@ function include_my_scripts() {
   wp_enqueue_script('owl-script', get_template_directory_uri() . '/assets/js/owl.carousel.js', array('jquery'), null, true);
   wp_enqueue_script('lightbox-script', get_template_directory_uri() . '/assets/js/lightbox.js', array('jquery'), null, true);
   wp_enqueue_script('mapbox-script', 'https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js', array('jquery'), null, true);
-  wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
+  wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array(), null, true);
   
   wp_enqueue_style('mapbox-style', 'https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css');
 }
@@ -47,5 +47,3 @@ add_action('thesis_hook_footer','custom_footer_menu');
 add_theme_support( 'post-thumbnails' );
 
 ?>
-
-

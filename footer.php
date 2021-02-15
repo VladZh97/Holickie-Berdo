@@ -11,6 +11,10 @@
             ));
         ?>
         </div>
+        <div class="footer__seo">
+        <p class="footer__seo-copy">Copyright © Holickie Berdo 2021. All rights reserved</p>
+        <p class="footer__seo-contact">Tworzenie Stron WWW - <a href="tel:">516 021 987</a></p>
+        </div>
     </div>
 </footer>
 <?php wp_footer(); ?>

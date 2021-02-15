@@ -1,7 +1,6 @@
 <?php
 get_header('subpage');
 ?>
-<main>
 <div class="single">
     <div class="single__inner">
         <h1 class="single__title title anim-items"><?php the_title(); ?></h1>

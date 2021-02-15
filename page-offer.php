@@ -15,13 +15,13 @@ get_header('subpage'); ?>
                             ?>
                                 <div class="offer__row anim-items row">
                                 <div class="out__offer" id="<?php echo "oferta-".$i; ?>"></div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 offer__item-left">
                                         <div class="offer__left">
                                             <h2 class="offer__item-title"><?php echo $title?></h2>
                                             <p class="offer__item-text text"><?php echo $text?></p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 offer__item-right">
                                         <div class="offer__right">
                                             <div class="offer__image">
                                                 <img src="<?php echo $image?>" alt="obrazek">

@@ -1,1 +1,1 @@
-## http://berdo.kivikivi.pl/
+## https://holickieberdo.pl/
